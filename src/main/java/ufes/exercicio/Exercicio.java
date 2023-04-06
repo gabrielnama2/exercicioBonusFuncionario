@@ -1,17 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package ufes.exercicio;
+import ufes.exercicio.bonus.CalculoSalarioFinalService;
+import ufes.exercicio.funcionarios.Funcionario;
 
-/**
- *
- * @author gabriel.n.nascimento
- */
 public class Exercicio {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Funcionario funcionario = new Funcionario ("Gabriel", 1000.00, 25, 80, 1);
+        CalculoSalarioFinalService calculoSalarioFinal = new CalculoSalarioFinalService(funcionario);
+        calculoSalarioFinal.calcularSalarioFinal(funcionario);
     }
 }
