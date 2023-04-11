@@ -37,7 +37,7 @@ public class Funcionario{
   public int getIdade(){
     return this.idade;
   }
-  public int numDependentes(){
+  public int getNumDependentes(){
     return this.numDependentes;
   }
   public ArrayList<Bonus> getBonusRecebidos(){
